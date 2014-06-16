@@ -3,6 +3,17 @@
 
 using namespace std;
 
+
+Kwadrat::Kwadrat()
+{
+    bok = 0;
+}
+
+Kwadrat::Kwadrat(double bokKwadratu)
+{
+    bok = bokKwadratu;
+}
+
 double Kwadrat::obliczObwod()
 {
     return bok * 4;
@@ -36,6 +47,12 @@ void Kwadrat::ustawBok(double bokKwadratu)
 {
     bok = bokKwadratu; 
 }
+double Kwadrat::wypiszBok()
+{
+    return bok;
+}
+
+
 
 void Kwadrat::wczytaj()
 {
@@ -55,14 +72,20 @@ void Kwadrat::wczytaj()
     ustawY(tempY);
 
     cout << "obwod: " << obliczObwod() << endl;
-    cout << "pole: " <<obliczPole() << endl;
+    cout << "pole: " << obliczPole() << endl;
     obliczWspolrzedne();
     cout << "wspolrzedne: " << endl
         << "x: " << xA << "y: " << yA << endl
         << "x: " << xB << "y: " << yB << endl
         << "x: " << xC << "y: " << yC << endl
         << "x: " << xD << "y: " << yD << endl;
-    cin >> tempX;
+    
+
+
+    
+
+
+
     //delete (k);
 
 }

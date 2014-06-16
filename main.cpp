@@ -50,7 +50,13 @@ int main()
         break;
     }
 
+    Kwadrat w = *k;
+    Kwadrat suma = w + w;\
+    cout << "bok przed przeladowaniem" << w.wypiszBok() << endl;
+    
+    cout << "bok po przeladowaniu" << suma.wypiszBok();
 
+    cin >> jakafigura;
     return 0;
 
 }
