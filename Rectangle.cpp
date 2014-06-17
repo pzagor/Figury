@@ -4,6 +4,19 @@
 
 using namespace std;
 
+
+Rectangle::Rectangle()
+{
+    sideHor = 1;
+    sideVer = 1;
+}
+
+Rectangle::Rectangle(double sideVertical, double sideHorizontal)
+{
+    sideHor = sideHorizontal;
+    sideVer = sideVertical;
+}
+
 double Rectangle::countPerimeter()
 {
     return sideVer * 2 + sideHor * 2;

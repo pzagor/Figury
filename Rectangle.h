@@ -5,6 +5,7 @@ class Rectangle : public Shape
 
 {
 public:
+    Rectangle();
     void readShape();
     void writeShape();
    
@@ -20,6 +21,15 @@ private:
     void countVertices();
     void setVerSide(double bok);
     void setHorSide(double bok);
+
+    Rectangle(double sideVer, double sideHor);
+
+public:
+   
+    Rectangle operator +(const Rectangle & k)
+    {
+        return Rectangle(this->sideVer + k.sideVer, this->sideHor + k.sideHor);
+    }
     
 
 
