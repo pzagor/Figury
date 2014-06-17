@@ -1,8 +1,8 @@
 
 #include <iostream>
-#include "Czytnik.h"
 #include "Square.h"
 #include "Rectangle.h"
+#include "EqTriangle.h"
 #include <vector>
 
 
@@ -47,9 +47,7 @@ void clean(vector<Shape*> tab)
 {
     for (int i = 0; i < tab.size(); ++i)
     {
-        
-        delete tab[i];
-        
+        delete tab[i];   
     }
 }
 
@@ -67,9 +65,8 @@ Shape* makeShape(int actionNr)
     //case 3:
     //    wczytajKwadrat();   //////  TODO :pozostale figury
     //    break;
-    //case 4:
-    //    wczytajKwadrat();
-    //    break;
+    case 4:
+        return new EqTriangle();
     //case 5:
     //    wczytajKwadrat();
     //    break;
