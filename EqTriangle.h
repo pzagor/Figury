@@ -8,6 +8,7 @@ public:
     EqTriangle();
     void readShape();
     void writeShape();
+    double readNumber(); // FIX
 
 private:
     double side;
@@ -16,6 +17,7 @@ private:
     double countArea();
     void countVertices();
     void setSide(double trSide);
+    
 
     EqTriangle(double side);
 
