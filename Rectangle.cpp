@@ -51,27 +51,20 @@ void Rectangle::writeShape()
         << endl << endl;
 }
 
-
 void Rectangle::readShape()
 {
     
-    double tempBokPion;
-    double tempBokPoziom;
-    double tempX;
-    double tempY;
-
     cout << "Podaj dlugosc boku w pionie" << endl;
-    cin >> tempBokPion;
-    setVerSide(tempBokPion);
+    this->sideVer = readNumber();
+
     cout << "Podaj dlugosc boku w poziomie" << endl;
-    cin >> tempBokPoziom;
-    setHorSide(tempBokPoziom);
+    this->sideHor = readNumber();
+
     cout << "Podaj wspolrzedna x wierzcholka" << endl;
-    cin >> tempX;
-    setX(tempX);
+    this->Ax = readNumber();
+
     cout << "Podaj wspolrzedna y wierzcholka" << endl;
-    cin >> tempY;
-    setY(tempY);
+    this->Ay = readNumber();
 
     writeShape();
 }

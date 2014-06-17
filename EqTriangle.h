@@ -8,7 +8,7 @@ public:
     EqTriangle();
     void readShape();
     void writeShape();
-    double readNumber(); // FIX
+    //double readNumber(); // FIX
 
 private:
     double side;

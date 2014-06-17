@@ -57,39 +57,34 @@ void EqTriangle::writeShape()
 }
 
 
-double EqTriangle::readNumber() {
-    double num;
-    cout << "Podaj liczbe " << endl;
-    cin >> num;
-    // ver1: while( cin.fail() ) // or !cin.good()   no trailing char check.
-    while (cin.fail() || (cin.peek() != '\r' && cin.peek() != '\n'))
-    {
-        cout << "Podaj prawidlowa liczbe" << endl;
-        cin.clear();
-        while (cin.get() != '\n'); // or cin.ignore(1000, '\n');
-        cin >> num;
-    }
-    return num;
-}
+//double EqTriangle::readNumber() 
+//    {
+//    double num;
+//    cout << "Podaj liczbe " << endl;
+//    cin >> num;
+//    // ver1: while( cin.fail() ) // or !cin.good()   no trailing char check.
+//    while (cin.fail() || (cin.peek() != '\r' && cin.peek() != '\n'))
+//    {
+//        cout << "Podaj prawidlowa liczbe" << endl;
+//        cin.clear();
+//        while (cin.get() != '\n'); // or cin.ignore(1000, '\n');
+//        cin >> num;
+//    }
+//    return num;
+//    }
 
 void EqTriangle::readShape()
 {
-    double tempBok;
-    double tempX;
-    double tempY;
-
+   
     cout << "Podaj dlugosc boku" << endl;
-    cin >> tempBok;
-    setSide(tempBok);
-    //cout << "Podaj wspolrzedna x wierzcholka" << endl;
+    this->side = readNumber();
+    
+    cout << "Podaj wspolrzedna x wierzcholka" << endl;
     this->Ax = readNumber();
 
-    //cin >> tempX;
-    //setX(tempX);
     cout << "Podaj wspolrzedna y wierzcholka" << endl;
-    cin >> tempY;
-    setY(tempY);
-
+    this->Ay = readNumber();
+   
     writeShape();
     //this->y = wczytaj("wierzcholek Y");
     //x = wczytaj("wierzcholek X");

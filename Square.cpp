@@ -58,19 +58,15 @@ void Square::writeShape()
 
 void Square::readShape()
 {
-    double tempBok;
-    double tempX;
-    double tempY;
-
+    
     cout << "Podaj dlugosc boku" << endl;
-    cin >> tempBok;
-    setSide(tempBok);
+    this->side = readNumber();
+
     cout << "Podaj wspolrzedna x wierzcholka" << endl;
-    cin >> tempX;
-    setX(tempX);
+    this->Ax = readNumber();
+
     cout << "Podaj wspolrzedna y wierzcholka" << endl;
-    cin >> tempY;
-    setY(tempY);
+    this->Ay = readNumber();
 
     writeShape();
     //this->y = wczytaj("wierzcholek Y");

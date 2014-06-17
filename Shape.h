@@ -12,7 +12,7 @@ public:
     virtual void writeShape() = 0;
     void setX(double x);
     void setY(double y);
-    //double readNumber();
+    double readNumber();
 
 
 protected:
