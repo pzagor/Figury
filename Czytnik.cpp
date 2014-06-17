@@ -2,7 +2,7 @@
 #include <iostream>
 
 #include "Czytnik.h"
-#include "Kwadrat.h"
+#include "Square.h"
 
 using namespace std;
 
